@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roster – Support</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #F5F7FA;
+      color: #1A1A2E;
+      line-height: 1.6;
+    }
+
+    /* ── Header ── */
+    header {
+      background: #17416C;
+      color: white;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    header .logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 72px;
+      height: 72px;
+      background: white;
+      border-radius: 18px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    }
+    header .logo svg { width: 40px; height: 40px; }
+    header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+    header p { margin-top: 8px; font-size: 1.05rem; opacity: 0.85; }
+
+    /* ── Main ── */
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── Section ── */
+    section { margin-bottom: 40px; }
+    section h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #17416C;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #E2EAF4;
+    }
+
+    /* ── Cards ── */
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin-bottom: 12px;
+    }
+    .card p { color: #444; font-size: 0.97rem; }
+
+    /* ── FAQ ── */
+    details {
+      background: white;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      cursor: pointer;
+    }
+    details[open] summary { margin-bottom: 10px; }
+    summary {
+      font-weight: 600;
+      font-size: 0.97rem;
+      color: #1A1A2E;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    summary::after {
+      content: "+";
+      font-size: 1.3rem;
+      color: #17416C;
+      font-weight: 400;
+      flex-shrink: 0;
+      margin-left: 12px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::after { content: "−"; }
+    details p { font-size: 0.93rem; color: #555; line-height: 1.65; }
+
+    /* ── Contact button ── */
+    .contact-btn {
+      display: inline-block;
+      background: #17416C;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 14px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(23,65,108,0.3);
+      transition: background 0.2s, transform 0.15s;
+    }
+    .contact-btn:hover { background: #0f2d4f; transform: translateY(-1px); }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      font-size: 0.82rem;
+      color: #999;
+      padding: 32px 24px;
+      border-top: 1px solid #E5E5E5;
+    }
+    footer a { color: #17416C; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <!-- Simple "R" wordmark fallback if no icon available -->
+    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="40" height="40" rx="8" fill="#17416C"/>
+      <text x="20" y="28" text-anchor="middle" font-family="-apple-system, sans-serif"
+            font-weight="800" font-size="22" fill="white">R</text>
+    </svg>
+  </div>
+  <h1>Roster Support</h1>
+  <p>We're here to help. Find answers or reach out directly.</p>
+</header>
+
+<main>
+
+  <!-- Contact -->
+  <section>
+    <h2>Contact Us</h2>
+    <div class="card" style="text-align:center; padding: 32px 24px;">
+      <p style="margin-bottom: 20px; color: #555;">
+        Have a question, found a bug, or need help with your account?<br>
+        Send us an email and we'll get back to you as soon as possible.
+      </p>
+      <a class="contact-btn" href="mailto:rosterappofficial@gmail.com">Email Support</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+      <summary>How do I add a vendor to my Roster?</summary>
+      <p>Search for a vendor using the Discover tab, open their profile page, and tap the <strong>+ (add-circle)</strong> button in the top-right corner. The vendor will appear in your Roster immediately.</p>
+    </details>
+
+    <details>
+      <summary>How do I invite friends to Roster?</summary>
+      <p>Open the menu (top-right on the Home screen) and tap <strong>Invite a Friend</strong>. You can share your personal invite link or code via any messaging app.</p>
+    </details>
+
+    <details>
+      <summary>What is a Community Note?</summary>
+      <p>Community Notes are short reviews left by Roster users about a vendor — you can rate a vendor as Positive, Neutral, or Negative and add a comment. Each user can leave one note per vendor.</p>
+    </details>
+
+    <details>
+      <summary>How do I report inappropriate content?</summary>
+      <p>On any vendor profile page, scroll to the bottom and tap <strong>Report this vendor</strong>. You can also report individual community notes or ratings directly from the item's menu. All reports are reviewed by our team.</p>
+    </details>
+
+    <details>
+      <summary>How do I delete my account?</summary>
+      <p>To request account deletion, please email us at <a href="mailto:rosterappofficial@gmail.com">rosterappofficial@gmail.com</a> with the subject line "Delete My Account." We will permanently remove your account and associated data within 30 days.</p>
+    </details>
+
+    <details>
+      <summary>I forgot my password. How do I reset it?</summary>
+      <p>On the login screen, tap <strong>Forgot Password?</strong> and enter your email address. You'll receive a password reset link within a few minutes. Check your spam folder if it doesn't arrive.</p>
+    </details>
+
+    <details>
+      <summary>Is Roster available on Android?</summary>
+      <p>Roster is currently available on iOS. Android support is on our roadmap — stay tuned for updates.</p>
+    </details>
+
+  </section>
+
+  <!-- Response time -->
+  <section>
+    <h2>Response Times</h2>
+    <div class="card">
+      <p>We typically respond to support emails within <strong>1–2 business days</strong>. For urgent issues, please include "URGENT" in your subject line.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Roster. All rights reserved. &nbsp;·&nbsp; <a href="mailto:rosterappofficial@gmail.com">support@rosterapp.com</a></p>
+</footer>
+
+</body>
+</html>
